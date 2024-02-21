@@ -20,4 +20,4 @@ $trigger=New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
 $taskSettings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
 
 # Enregistrement de la tâche et "Exécuter sous"
-Register-ScheduledTask -TaskName "Execution RT" -Trigger $trigger -Action $action -Description "Readiness Toolkit Execution" -Settings $taskSettings
+Register-ScheduledTask -TaskName "Task Name" -Trigger $trigger -Action $action -Description "Task Description" -Settings $taskSettings
