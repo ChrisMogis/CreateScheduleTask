@@ -11,7 +11,7 @@
 #>
 
 # Action à exécuter - script Powershell RT
-$action=New-ScheduledTaskAction -Execute "powershell.exe" -Argument '-ExecutionPolicy Bypass -windowstyle hidden -file "C:\Program32\MS_Readiness\Microsoft_ReadinessToolkit_Usercontextexecution_1.2.23020_x86_EN.ps1"'
+$action=New-ScheduledTaskAction -Execute "powershell.exe" -Argument '-ExecutionPolicy Bypass -windowstyle hidden -file "MyScript.ps1"'
 
 # Planification de la tâche
 $trigger=New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
